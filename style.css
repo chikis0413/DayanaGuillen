@@ -1,28 +1,46 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* Estilos generales */
+* {
     margin: 0;
     padding: 0;
-    background-color: #000000;
+    box-sizing: border-box;
   }
   
-  header {
-    background-color: #4400ff;
-    color: white;
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Contenedor principal que ocupa el 80% del ancho de la página */
+  .container {
+    width: 80%;
+    background-color: white;
     padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilos del header */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
   }
   
   h1 {
-    margin: 0;
+    color: #333;
   }
   
+  /* Estilos para el grid de personajes */
   .character-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
   }
   
+  /* Estilos para las cards de los personajes */
   .card {
     background-color: white;
     border-radius: 10px;
@@ -41,6 +59,7 @@ body {
     transform: scale(1.05);
   }
   
+  /* Estilos del modal */
   .modal {
     display: none;
     position: fixed;
